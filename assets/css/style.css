@@ -151,8 +151,8 @@ main {
 /* Configuración para pantallas móviles */
 @media (max-width: 768px) {
   main {
-    margin-top: 20%; /* Ajustado para mejor visualización */
-    padding: 15% 5%;
+    margin-top: 10%; /* Ajustado para mejor visualización */
+    padding: 5% 5%;
     height: auto; /* Ajustado para adaptarse al contenido */
   }
 
@@ -193,7 +193,7 @@ main {
 /* Configuración para pantallas tipo tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
   main {
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 0 20px;
     height: auto;
   }
