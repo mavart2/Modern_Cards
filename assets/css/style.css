@@ -150,6 +150,8 @@ main {
 
 /* Configuración para pantallas móviles */
 @media (max-width: 768px) {
+  
+
   main {
     margin-top: 5%; /* Ajustado para mejor visualización */
     padding: 5% 5%;
@@ -165,24 +167,23 @@ main {
 
   .title h1 {
     font-size: 2rem;
-    padding: 1rem 1rem;
+    padding: 1rem ;
   }
   .title p {
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .container-card {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 10px 0;
+    padding: 10px;
     height: auto;
   }
 
   .card {
-    width: 100%; /* Tarjetas ocupan todo el ancho */
+    width: 95%; /* Tarjetas ocupan todo el ancho */
     height: auto;
-    margin-top: 1rem;
     margin-bottom: 10px;
   }
 
