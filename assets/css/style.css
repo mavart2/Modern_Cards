@@ -148,10 +148,7 @@ main {
     aspect-ratio: 16 / 9;
 }
 @media (max-width: 480px) {
-  main {
-    margin-top: 50%;
-    padding: 10 5%;
-  }
+  
   .container-card {
     padding: 5px 0;
     gap: 10px;
@@ -173,8 +170,8 @@ main {
 
 @media (max-width: 768px) {
   main {
-    margin-top: 50%;
-    padding: 10 5%;
+    margin-top: 70%;
+    padding: 20 5%;
   }
 
   .title {
