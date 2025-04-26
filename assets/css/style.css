@@ -226,14 +226,11 @@ main {
       overflow: hidden; /* Evita el scroll */
     }
   
-    main {
-      margin-top: 0; /* Ajusta el margen para que no exceda la pantalla */
-      padding: 0 60px; 
-      height: 100vh; /* Asegura que el elemento ocupe toda la ventana */
-      display: flex; 
-      flex-direction: column; 
-      justify-content: center; /* Centra el contenido verticalmente */
-    }
+  main {
+    margin-top: 0%;
+    padding: 0 60px;
+    height: auto;
+  }
 
   .title {
     width: 50%;
