@@ -151,7 +151,7 @@ main {
 /* Configuración para pantallas móviles */
 @media (max-width: 768px) {
   main {
-    margin-top: 10%; /* Ajustado para mejor visualización */
+    margin-top: 5%; /* Ajustado para mejor visualización */
     padding: 5% 5%;
     height: auto; /* Ajustado para adaptarse al contenido */
   }
@@ -160,7 +160,7 @@ main {
     width: 100%;
     text-align: center;
     font-size: 1.8rem;
-    margin-top: 0%;
+    
   }
 
   .title h1 {
@@ -174,7 +174,7 @@ main {
   .container-card {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
     padding: 10px 0;
     height: auto;
   }
@@ -182,6 +182,7 @@ main {
   .card {
     width: 100%; /* Tarjetas ocupan todo el ancho */
     height: auto;
+    margin-top: 1rem;
     margin-bottom: 10px;
   }
 
