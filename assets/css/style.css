@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: #121826;
+  background-image: linear-gradient(rgba(34, 5, 121, 0.2), rgba(0, 0, 0, 0.6)),
+    url(../images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 10px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 30%;
+  color: #fff;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.title h1 {
+  font-size: 48px;
+}
+.title p {
+  margin-top: 10px;
+  color: #d2d5da;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container-card {
+    display: flex;
+   
+    gap: 40px;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+.card {
+  width: 20%;
+  height: 470px;
+  background-color: #212036ac;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(253, 252, 252, 0.4);
+  transition: all 0.3s ease-in-out; /* Suavidad en el hover */
+  background: linear-gradient(
+    145deg,
+    #1e1c31,
+    #2a2849
+  ); /* Degradado dinámico */
+}
+.card:hover {
+  transform: scale(1.05); /* Animación al hover */
+  box-shadow: 0 0 25px rgba(253, 252, 252, 0.6);
+  opacity: 0.9; /* Suaviza el enfoque */
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    145deg,
+    #fcecd8,
+    #f8d7b6
+  ); /* Fondo con degradado */
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(251, 153, 6, 0.8); /* Semitransparente */
+  background-color: #fceed8;
+  margin: 10px 0 15px 0;
+  transition: all 0.3s ease-in-out; /* Suavidad en el hover */
+}
+.icon i {
+  font-size: 35px;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Animación al hover */
+  color: #ff66b2;
+}
+
+.card-title {
+  color: #fff;
+  margin: 12px 0;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.card-desc {
+  width: 80%;
+  color: white;
+  font-size: clamp(1rem, 2.5vw, 1rem);
+  position: relative;
+  margin: 12px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.image {
+  max-width: 100%;
+  box-shadow: 0 0 25px rgba(253, 252, 252, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+.image:hover {
+    box-shadow: 5px 5px 30px rgba(253, 252, 252, 0.4);
+    
+  }
+.image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* ✅ Mantiene el contenido dentro y recorta con estilo */
+  display: block;
+  transition: all 0.3s ease-in-out; /* Suavidad en el hover */
+  
+}
+.image img:hover {
+  box-shadow: 5px 5px 30px rgba(253, 252, 252, 0.4);
+
+  transform: scale(1.05); /* Animación al hover */
+  opacity: 0.9; /* Suaviza el enfoque */
+  
+}
+.video-container {
+    aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 45%;
+    padding: 0 20px;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 95%;
+  }
+  .container-card {
+    flex-direction: column; /* Hace que las cards se apilen */
+    align-items: center; /* Centra las cards en columna */
+    gap: 20px; /* Espacio entre cada card */
+    padding: 20px 0;
+    height: auto; /* Permite crecer según contenido */
+  }
+
+  .card {
+    width: 90%; /* ✅ 90% del ancho en mobile */
+    height: auto; /* Altura automática */
+  }
+
+  .card-title h2 {
+    font-size: 18px; /* Reduce el tamaño del título */
+  }
+
+  .card-desc {
+    font-size: clamp(1rem, 2.5vw, 1rem);
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  main {
+    margin-top: 10%;
+    padding: 0 40px;
+  }
+
+  .title {
+    width: 80%;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 45%;
+  }
+
+  .container-card {
+    flex-direction: row; /* ✅ Las cards en fila */
+    flex-wrap: wrap; /* ✅ Permite que pasen a la siguiente línea si no caben */
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 20px 0;
+    height: auto;
+  }
+
+  .card {
+    width: 45%; /* ✅ Ocupan 45% para que entren 2 por fila */
+    height: auto;
+  }
+
+  .card-title h2 {
+    font-size: 20px;
+  }
+
+  .card-desc {
+    font-size: clamp(1rem, 2.5vw, 1rem);
+  }
+  .image {
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+  }
+
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+  @media (min-width: 1025px) {
+  main {
+    margin-top: 5%;
+    padding: 0 60px;
+    height: auto;
+  }
+
+  .title {
+    width: 50%;
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .container-card {
+    flex-wrap: wrap; /* Permite salto de línea si no caben */
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 0;
+    height: auto;
+  }
+
+  .card {
+    width: 25%; /* Más espacio para evitar que se achiquen tanto */
+    height: auto;
+    min-height: 470px;
+  }
+
+  .card-title h2 {
+    font-size: 22px;
+  }
+
+  .card-desc {
+    font-size: 17px;
+  }
+
+  .image {
+    height: 200px;
+  }
+
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+  
+  
