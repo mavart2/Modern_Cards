@@ -160,6 +160,9 @@ main {
     font-size: 20px;
     margin-top: 95%;
   }
+  .title h1 {
+    font-size: 28px;
+  }
   .container-card {
     flex-direction: column; /* Hace que las cards se apilen */
     align-items: center; /* Centra las cards en columna */
