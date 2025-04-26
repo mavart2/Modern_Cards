@@ -151,7 +151,7 @@ main {
 /* Configuración para pantallas móviles */
 @media (max-width: 768px) {
   main {
-    margin-top: 60%; /* Ajustado para mejor visualización */
+    margin-top: 20%; /* Ajustado para mejor visualización */
     padding: 15% 5%;
     height: auto; /* Ajustado para adaptarse al contenido */
   }
@@ -160,11 +160,14 @@ main {
     width: 100%;
     text-align: center;
     font-size: 1.8rem;
-    margin-top: 40%;
+    margin-top: 0%;
   }
 
   .title h1 {
     font-size: 2rem;
+    padding: 1rem 1rem;
+  }
+  .title p {
     padding: 1rem 1rem;
   }
 
@@ -190,7 +193,7 @@ main {
 /* Configuración para pantallas tipo tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
   main {
-    margin-top: 20%;
+    margin-top: 10%;
     padding: 0 20px;
     height: auto;
   }
