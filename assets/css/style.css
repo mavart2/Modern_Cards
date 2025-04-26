@@ -147,30 +147,11 @@ main {
 .video-container {
     aspect-ratio: 16 / 9;
 }
-@media (max-width: 480px) {
-  
-  .container-card {
-    padding: 5px 0;
-    gap: 10px;
-  }
 
-  .title h1 {
-    font-size: 2rem;
-  }
-
-  .card {
-    width: 95%;
-    padding: 10px;
-  }
-
-  .card-desc {
-    font-size: 0.9rem;
-  }
-}
 
 @media (max-width: 768px) {
   main {
-    margin-top: 90%;
+    margin-top: 80%;
     padding: 20 5%;
     height: 100vh;
   }
