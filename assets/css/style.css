@@ -170,7 +170,7 @@ main {
 
 @media (max-width: 768px) {
   main {
-    margin-top: 100%;
+    margin-top: 90%;
     padding: 20 5%;
   }
 
@@ -182,7 +182,7 @@ main {
   }
   .title h1 {
     font-size: 2rem; /* Escalado relativo para mantener jerarquía visual */
-    padding: 3rem 1rem;
+    padding: 1git rem 1rem;
   }
   .title p {
    
