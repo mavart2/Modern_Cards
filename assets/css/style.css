@@ -178,11 +178,11 @@ main {
     width: 100%;
     text-align: center;
     font-size: 2rem;
-    margin-top: 70%;
+    margin-top: 90%;
   }
   .title h1 {
-    font-size: 2.5rem; /* Escalado relativo para mantener jerarquía visual */
-    padding: 0.5rem 1rem;
+    font-size: 2rem; /* Escalado relativo para mantener jerarquía visual */
+    padding: 2rem 1rem;
   }
   .title p {
    
