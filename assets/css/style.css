@@ -170,8 +170,9 @@ main {
 
 @media (max-width: 768px) {
   main {
-    margin-top: 40%;
+    margin-top: 70%;
     padding: 20 5%;
+    height: 100vh;
   }
 
   .title {
