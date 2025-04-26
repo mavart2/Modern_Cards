@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  padding-top: 10px;
+  
   width: 100%;
   height: 100vh;
   display: flex;
@@ -222,11 +222,18 @@ main {
 
 
   @media (min-width: 1025px) {
-  main {
-    margin-top: 5%;
-    padding: 0 60px;
-    height: auto;
-  }
+    body {
+      overflow: hidden; /* Evita el scroll */
+    }
+  
+    main {
+      margin-top: 0; /* Ajusta el margen para que no exceda la pantalla */
+      padding: 0 60px; 
+      height: 100vh; /* Asegura que el elemento ocupe toda la ventana */
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; /* Centra el contenido verticalmente */
+    }
 
   .title {
     width: 50%;
